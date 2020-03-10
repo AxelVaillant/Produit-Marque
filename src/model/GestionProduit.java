@@ -72,4 +72,5 @@ public class GestionProduit {
 		return dao.getProducts();
 		
 	}
+
 }

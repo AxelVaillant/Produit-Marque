@@ -6,9 +6,25 @@
       xmlns:f="http://java.sun.com/jsf/core">
 <head>
 <meta charset="utf-8"/>
+<link rel="stylesheet" type= "text/css" href="bootstrap.min.css"></link>
 <title>listem</title>
 </head>
 <body>
+<h2>Menu</h2>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="createproduct.xhtml">Ajout Produit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="createmarque.xhtml">Ajout marque</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="listep.xhtml">Liste Produits</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="listem.xhtml">Liste Marques</a>
+  </li>
+</ul>
 <H1>Liste des marques</H1>
 <ui:repeat var="marque" value="#{gp.listMarques()}">
 <p>#{marque}</p>

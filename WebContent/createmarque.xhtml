@@ -7,10 +7,26 @@
       xmlns:h="http://java.sun.com/jsf/html">
 
 <head>
+<link rel="stylesheet" type= "text/css" href="bootstrap.min.css"></link>
 <title>creation marque </title>
 
 </head>
 <body>
+<h2>Menu</h2>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="createproduct.xhtml">Ajout Produit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="createmarque.xhtml">Ajout marque</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="listep.xhtml">Liste Produits</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="listem.xhtml">Liste Marques</a>
+  </li>
+</ul>
 <h:form>
 <h:outputLabel>Nom Marque:</h:outputLabel>
 <h:inputText value="#{gp.marque.nommarque}"></h:inputText><br/>

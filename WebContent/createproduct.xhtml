@@ -9,10 +9,26 @@
       xmlns:f="http://java.sun.com/jsf/core">
 
 <head>
+<link rel="stylesheet" type= "text/css" href="bootstrap.min.css"></link>
 <title>creation </title>
 
 </head>
 <body>
+<h2>Menu</h2>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="createproduct.xhtml">Ajout Produit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="createmarque.xhtml">Ajout marque</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="listep.xhtml">Liste Produits</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="listem.xhtml">Liste Marques</a>
+  </li>
+</ul>
 <h:form>
 <h:outputLabel>Nom Produit:</h:outputLabel>
 <h:inputText value="#{gp.produit.nomProduit}"></h:inputText><br/>
@@ -27,8 +43,6 @@
 <h:selectOneMenu value="#{gp.marque.idmarque}">
 <f:selectItems value="#{gp.listMarques()}" var="marque" itemValue="#{marque.idmarque}" itemLabel="#{marque.nommarque}"/>
 </h:selectOneMenu>
-
-
 
 
 <h:commandButton value="valider" action="#{gp.ajoutProduit()}"></h:commandButton>
